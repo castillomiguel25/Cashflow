@@ -16,10 +16,15 @@ const currencyFormatter = new Intl.NumberFormat("es-MX", {
   style: "currency",
   currency: "MXN",
 });
+
 export default {
   props: {
+    totalLabel: {
+      type: String,
+    },
     label: {
       type: String,
+      default: null,
     },
     totalAmount: {
       type: Number,
